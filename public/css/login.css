@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --cor-principal-1: #061b53;
+    --cor-principal-2: #152b69;
+    --background-1: #fff;
+    --background-2: #eee;
+}
+
+body {
+    background-color: var(--cor-principal-1);
+    font-family: "Ubuntu", "Segoe UI", Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagem-erro {
+    background-color: #1e3b8a7a;
+    border: 1px solid var(--cor-principal-2);
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--cor-principal-2);
+    text-transform: uppercase;
+}
+
+.login-container {
+    background-color: var(--background-1);
+    padding: 20px 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.login-cabecalho {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.login-cabecalho i {
+    font-size: 35px;
+    color: var(--cor-principal-2);
+}
+
+.login-cabecalho h1 {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--cor-principal-2);
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-container form input {
+    width: 100%;
+    border: 1px solid #bbb;
+    padding: 10px;
+    font-size: 14px;
+    color: #2e3b4e;
+    border-radius: 0;
+    background-color: #fff;
+    display: block;
+    box-sizing: border-box;
+}
+
+.login-container form input:focus {
+    border-color: var(--cor-principal-2);
+    outline: none;
+}
+
+.login-container form input,
+.btn-primary {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.login-container form button {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    background-color: var(--cor-principal-2);
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    height: 35px;
+    outline: none;
+}
+
+.login-container form button:focus,
+.login-container form button:hover {
+    background-color: var(--cor-principal-1);
+}
+
+.login-rodape {
+    text-align: center;
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 24px 20px;
+        max-width: 95%;
+    }
+
+    .login-cabecalho {
+        gap: 6px;
+    }
+
+    .login-cabecalho h1 {
+        font-size: 24px;
+    }
+
+    .login-container form input,
+    .login-container form button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .login-container {
+        padding: 20px 16px;
+    }
+
+    .login-cabecalho i {
+        font-size: 28px;
+    }
+
+    .login-cabecalho h1 {
+        font-size: 20px;
+    }
+}
